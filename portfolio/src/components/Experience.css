@@ -1,0 +1,23 @@
+.experience-section {
+  padding: 2rem 1rem;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(26,34,56,0.05);
+  margin: 2rem 0;
+}
+
+.experience-section h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.experience-section p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 1rem 0.5rem;
+  }
+} 

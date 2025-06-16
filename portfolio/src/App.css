@@ -1,0 +1,40 @@
+:root {
+  --primary: #1A2238;
+  --accent: #9DAAF2;
+  --highlight: #FF6A3D;
+  --background: #F4F6FB;
+  --surface: #FFFFFF;
+  --text: #22223B;
+  --text-secondary: #6B728E;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  background: var(--surface);
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(26,34,56,0.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem 0.5rem;
+  }
+}

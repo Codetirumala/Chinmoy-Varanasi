@@ -1,0 +1,145 @@
+.hero-section {
+  background: #f7faff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(45,58,140,0.06);
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text-block {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-text-block h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2d3a8c;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text-block h2 {
+  font-size: 1.4rem;
+  color: #4f8cff;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.hero-intro {
+  font-size: 1.1rem;
+  color: #3d3d4e;
+  margin-bottom: 2rem;
+  max-width: 420px;
+}
+
+.hero-contact-btn {
+  background: #2d3a8c;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.08rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(45,58,140,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+.hero-contact-btn:hover,
+.hero-contact-btn:focus {
+  background: #4f8cff;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(79,140,255,0.18);
+}
+
+.hero-image-block {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(45,58,140,0.10);
+  border: 6px solid #fff;
+  background: #e0e7ff;
+}
+
+.hero-download-btn {
+  background: #2d3a8c;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.08rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(45,58,140,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.hero-download-btn:hover,
+.hero-download-btn:focus {
+  background: #4f8cff;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(79,140,255,0.18);
+}
+
+.hero-download-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text-block {
+    align-items: center;
+  }
+  .hero-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 1.5rem 0.5rem;
+  }
+  .hero-text-block h1 {
+    font-size: 2rem;
+  }
+  .hero-text-block h2 {
+    font-size: 1.1rem;
+  }
+  .hero-photo {
+    width: 110px;
+    height: 110px;
+  }
+}
