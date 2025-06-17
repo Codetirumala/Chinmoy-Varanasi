@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <Navbar />
       <Hero />
       <About />
@@ -36,7 +37,7 @@ function App() {
       <ContentWriting />
       <Documents />
       <Contact />
-      <WhatsAppButton phoneNumber="919876543210" />
+      <WhatsAppButton phoneNumber="918886874955" />
     </div>
   );
 }
