@@ -39,20 +39,20 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      content: 'chinmoy.varanasi@gmail.com',
-      link: 'mailto:chinmoy.varanasi@gmail.com'
+      content: 'chinmoy.victory@gmail.com',
+      link: 'mailto:chinmoy.victory@gmail.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      content: '+91 1234567890',
-      link: 'tel:+911234567890'
+      content: '+91 8886874955',
+      link: 'tel:+918886874955'
     },
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      content: 'Varanasi, Uttar Pradesh, India',
-      link: 'https://maps.google.com/?q=Varanasi,Uttar+Pradesh'
+      content: 'Vishakhapatnam, Andhra Pradesh, India',
+      link: 'https://maps.google.com/?q=vishakhapatnam'
     }
   ];
 
