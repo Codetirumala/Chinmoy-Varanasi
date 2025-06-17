@@ -20,7 +20,7 @@ const Navbar = () => {
           <li><a href="#education" onClick={() => setOpen(false)}>Education</a></li>
           <li><a href="#certifications" onClick={() => setOpen(false)}>Certifications</a></li>
           <li><a href="#content-writing" onClick={() => setOpen(false)}>Content Writing</a></li>
-          <li><a href="#documentation" onClick={() => setOpen(false)}>Documentation</a></li>
+          <li><a href="#documents" onClick={() => setOpen(false)}>Documentation</a></li>
           <li><a href="#contact" className="contact-btn" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
       </div>

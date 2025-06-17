@@ -6,7 +6,8 @@ import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import ContentWriting from './components/ContentWriting';
 import Education from './components/Education';
-import Documentation from './components/Documentation';
+
+import Documents from './components/Documents';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
       <Education />
       <Certifications />
       <ContentWriting />
-      <Documentation />
+      
+      <Documents />
       <Contact />
     </div>
   );
