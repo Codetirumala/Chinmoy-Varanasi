@@ -3,7 +3,10 @@
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(45,58,140,0.06);
   padding: 3rem 2rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-inner {
@@ -13,6 +16,7 @@
   gap: 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .hero-text-block {
@@ -27,6 +31,8 @@
   font-weight: 800;
   color: #2d3a8c;
   margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  line-height: 1.2;
 }
 
 .hero-text-block h2 {
@@ -34,6 +40,7 @@
   color: #4f8cff;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  word-wrap: break-word;
 }
 
 .hero-intro {
@@ -41,6 +48,7 @@
   color: #3d3d4e;
   margin-bottom: 2rem;
   max-width: 420px;
+  line-height: 1.6;
 }
 
 .hero-contact-btn {
@@ -56,6 +64,7 @@
   border: none;
   outline: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .hero-contact-btn:hover,
@@ -63,6 +72,7 @@
   background: #4f8cff;
   color: #fff;
   box-shadow: 0 4px 16px rgba(79,140,255,0.18);
+  transform: translateY(-2px);
 }
 
 .hero-image-block {
@@ -80,6 +90,11 @@
   box-shadow: 0 4px 24px rgba(45,58,140,0.10);
   border: 6px solid #fff;
   background: #e0e7ff;
+  transition: transform 0.3s ease;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05);
 }
 
 .hero-download-btn {
@@ -97,6 +112,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .hero-download-btn:hover,
@@ -104,12 +121,38 @@
   background: #4f8cff;
   color: #fff;
   box-shadow: 0 4px 16px rgba(79,140,255,0.18);
+  transform: translateY(-2px);
 }
 
 .hero-download-icon {
   display: flex;
   align-items: center;
   margin-right: 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 2.5rem 1.5rem;
+    margin: 1.5rem auto;
+  }
+  
+  .hero-inner {
+    gap: 2rem;
+  }
+  
+  .hero-text-block h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-text-block h2 {
+    font-size: 1.3rem;
+  }
+  
+  .hero-photo {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -119,27 +162,143 @@
     align-items: center;
     text-align: center;
   }
+  
   .hero-text-block {
     align-items: center;
   }
+  
+  .hero-intro {
+    text-align: center;
+  }
+  
   .hero-photo {
     width: 160px;
     height: 160px;
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    border-radius: 16px;
+  }
+  
+  .hero-text-block h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-text-block h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-intro {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .hero-contact-btn,
+  .hero-download-btn {
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .hero-section {
     padding: 1.5rem 0.5rem;
+    margin: 0.5rem auto;
   }
+  
   .hero-text-block h1 {
     font-size: 2rem;
   }
+  
   .hero-text-block h2 {
     font-size: 1.1rem;
   }
+  
+  .hero-intro {
+    font-size: 0.95rem;
+  }
+  
   .hero-photo {
     width: 110px;
     height: 110px;
+    border-width: 4px;
   }
+  
+  .hero-contact-btn,
+  .hero-download-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+  }
+  
+  .hero-text-block h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text-block h2 {
+    font-size: 1rem;
+  }
+  
+  .hero-intro {
+    font-size: 0.9rem;
+  }
+  
+  .hero-photo {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+  }
+  
+  .hero-contact-btn,
+  .hero-download-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-text-block h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-text-block h2 {
+    font-size: 0.9rem;
+  }
+  
+  .hero-intro {
+    font-size: 0.85rem;
+  }
+  
+  .hero-photo {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .hero-contact-btn,
+  .hero-download-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Focus states for accessibility */
+.hero-contact-btn:focus,
+.hero-download-btn:focus {
+  outline: 3px solid #4f8cff;
+  outline-offset: 2px;
 }

@@ -5,17 +5,22 @@
   border-radius: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 60px;
+  padding: 0 1rem;
 }
 
 .section-header h2 {
@@ -27,10 +32,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  word-wrap: break-word;
 }
 
 .section-header p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #7f8c8d;
   max-width: 600px;
   margin: 0 auto;
@@ -45,6 +51,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .slideshow-wrapper {
@@ -182,6 +189,7 @@
   gap: 6px;
   margin-top: 20px;
   padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .indicator {
@@ -192,6 +200,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .indicator:hover {
@@ -235,6 +244,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   margin-top: 60px;
+  padding: 0 1rem;
 }
 
 .stat-item {
@@ -268,6 +278,21 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .slideshow-container {
+    max-width: 900px;
+  }
+  
+  .slideshow-wrapper {
+    height: 320px;
+  }
+  
+  .content-card {
+    min-width: 240px;
+    height: 280px;
+  }
+}
+
 @media (max-width: 768px) {
   .content-writing-section {
     padding: 60px 0;
@@ -308,11 +333,24 @@
   .stat-number {
     font-size: 2.5rem;
   }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .slideshow-track {
+    gap: 15px;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 480px) {
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
   }
   
   .slideshow-wrapper {
@@ -334,12 +372,94 @@
     height: 16px;
   }
   
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .play-pause-btn {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .play-pause-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+  
   .content-stats {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
   
   .stat-number {
     font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .slideshow-track {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .slide-indicators {
+    gap: 4px;
+    margin-top: 15px;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .slide-counter {
+    bottom: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .slideshow-wrapper {
+    height: 250px;
+  }
+  
+  .content-card {
+    min-width: 200px;
+    height: 220px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .nav-btn {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .stat-item {
+    padding: 20px;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
   }
 }
 
