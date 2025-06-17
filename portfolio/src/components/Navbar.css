@@ -8,6 +8,7 @@
   border-radius: 0 0 24px 24px;
   margin-bottom: 1.5rem;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  
 }
 
 .navbar-container {
@@ -17,6 +18,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.8rem 1rem;
+  
 }
 
 .navbar-logo {
@@ -52,6 +54,7 @@
   margin: 4px 0;
   border-radius: 2px;
   transition: 0.3s;
+  
 }
 
 .navbar-links {

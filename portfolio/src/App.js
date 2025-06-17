@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoadingScreen from './components/LoadingScreen';
+import WhatsAppButton from './components/WhatsAppButton';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -35,6 +36,7 @@ function App() {
       <ContentWriting />
       <Documents />
       <Contact />
+      <WhatsAppButton phoneNumber="919876543210" />
     </div>
   );
 }
