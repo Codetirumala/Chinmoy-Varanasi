@@ -10,7 +10,7 @@ const Hero = () => (
         <p className="hero-intro">
           Empowering individuals with the knowledge and skills to succeed in their careers and personal lives.
         </p>
-        <a href="/resume.pdf" className="hero-download-btn" download>
+        <a href="documents/resume.pdf" className="hero-download-btn" download>
           <span className="hero-download-icon" aria-hidden="true">
             <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
               <path d="M10 3v10m0 0l-4-4m4 4l4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
