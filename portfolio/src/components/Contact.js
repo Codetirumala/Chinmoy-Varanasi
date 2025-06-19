@@ -60,18 +60,14 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/your-profile'
+      url: 'https://www.linkedin.com/in/varanasi-chinmoy-certified-trainer-certified-coach'
     },
     {
       icon: <FaTwitter />,
       name: 'Twitter',
-      url: 'https://twitter.com/your-handle'
+      url: 'https://twitter.com/ChinmoyVaranasi'
     },
-    {
-      icon: <FaGithub />,
-      name: 'GitHub',
-      url: 'https://github.com/your-username'
-    }
+    
   ];
 
   return (
